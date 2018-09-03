@@ -185,9 +185,8 @@ const bidReducers = function (
 			tmpObj=JSON.parse(JSON.stringify(state));
 			tmpObj.items.map((each,i)=>{
 				if(each.id==action.payload.bidId){
-					console.info(each.vendors[action.payload.vendorKey].status);
+					// console.info(each.vendors[action.payload.vendorKey].status);
 					each.vendors[action.payload.vendorKey].status = action.payload.response
-					
 				}
 			})
 			return tmpObj;

@@ -39,14 +39,14 @@ class BidView extends React.Component {
 			</div>
 		</header>
 	}
-	bidRequestAction(p, e) {
+	bidRequestAction(p,q, e) {
 		let lobj = "";
 		lobj = {
 			bidId: this.props.item.id,
-			response: e.target.value,
+			response: q,
 			vendorKey: p
 		};
-		// console.info("Accepted "+p+" "+this.props.item.id);
+		// console.info("Accepted "+p+" "+this.props.item.id+" "+q);
 		this.props.bidRequestAction(lobj);
 	}
 	render() {
@@ -295,7 +295,7 @@ class BidView extends React.Component {
 										{this.props.item.vendors.map((row, i) => {
 											let bidRequestActionClick = this.bidRequestAction.bind(this, i);
 											if (row.status == "R")
-												return <BidRequests key={i} row={row} bidRequestAction={bidRequestActionClick} />
+												return <BidRequests key={i} row={row} bidRequestAction={(p,q,e)=>bidRequestActionClick(p,q,e)} />
 										})}
 
 									{/* </div> */}
@@ -321,12 +321,12 @@ class BidRequests extends React.Component {
 						</div>
 						{/* <div className="sds-col"> */}
 						{/* <div className="sds-col slds-border_all" style={{border:'2px solid',borderRadius: '5px'}} value="Y" onClick={this.props.bidRequestAction}> */}
-						<div className="sds-col" value="Y" onClick={this.props.bidRequestAction}>
+						<div className="sds-col" onClick={(p,e)=>this.props.bidRequestAction("Y",p,e)}>
 							<svg className="slds-icon slds-icon_x-small slds-icon-text-default slds-m-right_x-small" aria-hidden="true">
 								<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/src/client/assets/icons/action-sprite/svg/symbols.svg#check" />
 							</svg>
 						</div>
-						<div className="sds-col" value="N" onClick={this.props.bidRequestAction}>
+						<div className="sds-col" onClick={(p,e)=>this.props.bidRequestAction("N",p,e)}>
 							<svg className="slds-icon slds-icon_x-small slds-icon-text-default slds-m-right_x-small" aria-hidden="true">
 								<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/src/client/assets/icons/action-sprite/svg/symbols.svg#remove" />
 							</svg>
