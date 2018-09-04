@@ -99,7 +99,7 @@ class BidView extends React.Component {
 								<div className="slds-dropdown-trigger slds-dropdown-trigger_click slds-button_last" style={{ height: '30px' }}>
 									<button className="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="Show More" style={{ height: '30px' }}>
 										<svg className="slds-button__icon" aria-hidden="true">
-											<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/src/client/assets/icons/utility-sprite/svg/symbols.svg#down" />
+											<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="../assets/icons/utility-sprite/svg/symbols.svg#down" />
 										</svg>
 										<span className="slds-assistive-text">Show More</span>
 									</button>
@@ -116,9 +116,9 @@ class BidView extends React.Component {
 									<button aria-controls="expando-unique-id" aria-expanded="true" className="slds-button slds-section__title-action">
 										<span className="slds-truncate" title="LEADERBOARD">LEADERBOARD</span>
 
-										<div className="slds-clearfix slds-float_right" style={{ marginRight: '2px', marginLeft: '220px' }}>
+										<div className="slds-clearfix slds-float_right" style={{ marginRight: '2px', marginLeft: '250px' }}>
 											<svg className="slds-section__title-action-icon slds-button__icon slds-button__icon_right slds-clearfix slds-float_right" aria-hidden="true">
-												<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/src/client/assets/icons/utility-sprite/svg/symbols.svg#switch" />
+												<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="../assets/icons/utility-sprite/svg/symbols.svg#switch" />
 											</svg>
 										</div>
 									</button>
@@ -140,7 +140,7 @@ class BidView extends React.Component {
 															<span className="slds-truncate" title="RANK">RANK</span>
 															<div className="slds-icon_container">
 																<svg className="slds-icon slds-icon_x-small slds-icon-text-default slds-is-sortable__icon" aria-hidden="true">
-																	<use xlinkHref="/src/client/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+																	<use xlinkHref="../assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
 																</svg>
 															</div>
 														</a>
@@ -158,7 +158,7 @@ class BidView extends React.Component {
 															<span className="slds-truncate" title="VENDOR">VENDOR</span>
 															<div className="slds-icon_container">
 																<svg className="slds-icon slds-icon_x-small slds-icon-text-default slds-is-sortable__icon" aria-hidden="true">
-																	<use xlinkHref="/src/client/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+																	<use xlinkHref="../assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
 																</svg>
 															</div>
 														</a>
@@ -177,7 +177,7 @@ class BidView extends React.Component {
 															<span className="slds-truncate" title="BID AMOUNT/UNIT">BID AMOUNT/UNIT</span>
 															<div className="slds-icon_container">
 																<svg className="slds-icon slds-icon_x-small slds-icon-text-default slds-is-sortable__icon" aria-hidden="true">
-																	<use xlinkHref="/src/client/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+																	<use xlinkHref="../assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
 																</svg>
 															</div>
 														</a>
@@ -234,7 +234,7 @@ class BidView extends React.Component {
 
 										<div className="slds-clearfix slds-float_right" style={{ marginRight: '2px', marginLeft: '220px' }}>
 											<svg className="slds-section__title-action-icon slds-button__icon slds-button__icon_right slds-clearfix slds-float_right" aria-hidden="true">
-												<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/src/client/assets/icons/utility-sprite/svg/symbols.svg#switch" />
+												<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="../assets/icons/utility-sprite/svg/symbols.svg#switch" />
 											</svg>
 										</div>
 									</button>
@@ -282,7 +282,7 @@ class BidView extends React.Component {
 
 										<div className="slds-clearfix slds-float_right" style={{ marginRight: '2px', marginLeft: '220px' }}>
 											<svg className="slds-section__title-action-icon slds-button__icon slds-button__icon_right slds-clearfix slds-float_right" aria-hidden="true">
-												<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/src/client/assets/icons/utility-sprite/svg/symbols.svg#switch" />
+												<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="../assets/icons/utility-sprite/svg/symbols.svg#switch" />
 											</svg>
 										</div>
 									</button>
@@ -323,12 +323,12 @@ class BidRequests extends React.Component {
 						{/* <div className="sds-col slds-border_all" style={{border:'2px solid',borderRadius: '5px'}} value="Y" onClick={this.props.bidRequestAction}> */}
 						<div className="sds-col" onClick={(p,e)=>this.props.bidRequestAction("Y",p,e)}>
 							<svg className="slds-icon slds-icon_x-small slds-icon-text-default slds-m-right_x-small" aria-hidden="true">
-								<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/src/client/assets/icons/action-sprite/svg/symbols.svg#check" />
+								<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="../assets/icons/action-sprite/svg/symbols.svg#check" />
 							</svg>
 						</div>
 						<div className="sds-col" onClick={(p,e)=>this.props.bidRequestAction("N",p,e)}>
 							<svg className="slds-icon slds-icon_x-small slds-icon-text-default slds-m-right_x-small" aria-hidden="true">
-								<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/src/client/assets/icons/action-sprite/svg/symbols.svg#remove" />
+								<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="../assets/icons/action-sprite/svg/symbols.svg#remove" />
 							</svg>
 						</div>
 						{/* </div> */}

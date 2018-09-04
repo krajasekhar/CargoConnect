@@ -33,7 +33,7 @@ class BidLbar extends React.Component {
 							<div className="slds-form-element">
 								<div className="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
 									<svg className="slds-icon slds-input__icon slds-input__icon_left slds-icon-text-default" aria-hidden="true">
-										<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/src/client/assets/icons/utility-sprite/svg/symbols.svg#search" />
+										<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="../assets/icons/utility-sprite/svg/symbols.svg#search" />
 									</svg>
 									<input type="text" id="text-input-id-1" className="slds-input" placeholder="Search Bids" />
 								</div>
@@ -67,7 +67,7 @@ class BidLbar extends React.Component {
 								<input type="radio" id="Create new Bid" value="Create new Bid" name="Options" />
 								<label className="slds-nav-vertical__action" htmlFor="Create new Bid">
 									<svg className="slds-icon slds-icon_x-small slds-icon-text-default slds-m-right_x-small" aria-hidden="true">
-										<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/src/client/assets/icons/utility-sprite/svg/symbols.svg#add" />
+										<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="../assets/icons/utility-sprite/svg/symbols.svg#add" />
 									</svg>
 									<span className="slds-nav-vertical_radio-faux" onClick={(e) => this.lnav("CreateBid", e)}>Create new Bid</span>
 								</label>
@@ -76,7 +76,7 @@ class BidLbar extends React.Component {
 								<input type="radio" id="Create Vendor Group" value="Create Vendor Group" name="Options" />
 								<label className="slds-nav-vertical__action" htmlFor="Create Vendor Group">
 									<svg className="slds-icon slds-icon_x-small slds-icon-text-default slds-m-right_x-small" aria-hidden="true">
-										<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/src/client/assets/icons/utility-sprite/svg/symbols.svg#people" />
+										<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="../assets/icons/utility-sprite/svg/symbols.svg#people" />
 									</svg>
 									<span className="slds-nav-vertical_radio-faux" onClick={(e) => this.lnav("CreateVendorGroup", e)}>Create Vendor Group</span>
 								</label>

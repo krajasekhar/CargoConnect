@@ -30,9 +30,9 @@ class BidItem extends React.Component {
 	}
 	render() {
 		// alert(this.props.users.isLoggedIn);
-		this.bgStyle={};
+		this.bgStyle={width:'400px'};
 		if(this.props.isSelected){
-			this.bgStyle={backgroundColor:'rgb(245,245,245',border:'0px solid'};
+			this.bgStyle={backgroundColor:'rgb(245,245,245',border:'0px solid',width:'400px'};
 		}
 		// console.info(this.props.isSelected);
 		// console.info(this.bgStyle);

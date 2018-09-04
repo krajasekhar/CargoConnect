@@ -35,7 +35,7 @@ class Bids extends React.Component {
 
 	}
 	bidItemSelected(p, e) {
-		console.log(p);
+		// console.log(p);
 		this.props.bidItemSelected(p);
 	}
 	render() {
@@ -46,10 +46,10 @@ class Bids extends React.Component {
 					<div className="slds-col slds-size_5-of-24" style={{ borderRight: '3px solid',borderColor: '#cecece', paddingRight: '20px' }}>
 						<BidLbar />
 					</div>
-					<div className="slds-col slds-size_13-of-24" style={{margin:'0px',padding:'0px'}}>
+					<div className="slds-col slds-size_16-of-24" style={{margin:'0px',padding:'0px'}}>
 						<div className="slds-form-element" role="group" aria-labelledby="picklist-group-label" style={{height: '99%'}}>
 							<div className="slds-dueling-list" style={{minHeight: '99%'}}>
-								<div className="slds-dueling-list__column slds-dueling-list__column_responsive">
+								<div className="slds-dueling-list__column slds-dueling-list__column_responsive" style={{}}>
 									<div className="slds-dueling-list__options" style={{minHeight: '99%'}}>
 										<ul aria-describedby="option-drag-label" aria-labelledby="label-83" aria-multiselectable="false" className="slds-listbox slds-listbox_vertical" role="listbox" style={{margin:'0px',padding:'0px'}}>
 											{this.props.bids.items.map((row, i) => {

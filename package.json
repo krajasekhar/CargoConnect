@@ -31,7 +31,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development --config ./webpack.dev.js",
     "start": "webpack-dev-server --mode development --config ./webpack.dev.js",
-    "build": "webpack --mode production --config ./webpack.dev.js"
+    "newstart": "node webpack-dev-server --mode development --config ./webpack.dev.js",
+    "build": "webpack-dev-server --mode production --config ./webpack.dev.js"
   },
   "keywords": [],
   "author": "",

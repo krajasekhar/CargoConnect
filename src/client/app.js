@@ -129,7 +129,7 @@ class Header extends React.Component {
 								<div className="slds-context-bar__icon-action slds-p-left_none">
 									<button className="slds-button slds-button_icon slds-button_icon slds-context-bar__button" aria-haspopup="true" title="Open menu item submenu">
 										<svg className="slds-button__icon" aria-hidden="true">
-											<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="/src/client/assets/icons/utility-sprite/svg/symbols.svg#chevrondown" />
+											<use xmlnsXlink="http://www.w3.org/1999/xlink" xlinkHref="../assets/icons/utility-sprite/svg/symbols.svg#chevrondown" />
 										</svg>
 										<span className="slds-assistive-text">Open menu item submenu</span>
 									</button>
